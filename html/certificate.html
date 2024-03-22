@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title> KANBS Portfolio </title>
+        <link rel="stylesheet" href="/css/certificate.css">
+        <!-- box icon import from boxicon  -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <section class="content">
+            <h1 class="back-btn">
+                <a href="/index.html">
+                    <i class='bx bxs-chevron-left'></i>
+                </a>
+            </h1>
+            <h1 class="title"> My <span> Certificate </span> </h1>
+            <div class="container">
+                <div class="grid">
+                    <div class="image-cell">               
+                        <img src="/images/cer2.png" alt="Image number" 
+                        onclick="openImage('/images/cer2.png')">
+                    </div>
+
+                    <div class="image-cell">               
+                        <img src="/images/cer1.png" alt="Image number" 
+                        onclick="openImage('/images/cer1.png')">
+                    </div>
+
+                    <div class="image-cell">               
+                        <img src="/images/cer3.png" alt="Image number" 
+                        onclick="openImage(' /images/cer3.png')">
+                    </div>
+
+                    <div class="image-cell">               
+                        <img src="/images/cer4.jpg" alt="Image number" 
+                        onclick="openImage(' /images/cer4.jpg')">
+                    </div>
+
+                    <div class="image-cell">               
+                        <img src="/images/cer5.jpg" alt="Image number" 
+                        onclick="openImage(' /images/cer5.jpg')">
+                    </div>
+
+                   <!--<div class="image-cell">               
+                        <img src="just add img link from blogger page" alt="Image number" 
+                        onclick="openImage(' just add img link from blogger page')">
+                    </div>-->
+                    
+                    <!-- ADD MORE IMG JUST COPY ABOVE CODE AND CHANGE THE LINK -->
+                </div>
+            </div>
+        
+            <!-- Fullscreen Image -->
+            <div id="fullscreen-modal" class="fullscreen-image">
+                <img src="" alt="Enlarged Image" id="fullscreen-image">
+                <span class="close-button" onclick="closeImage()">&#x2715;</span>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by kanbs</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+
+    <!-- Footer us Desgin START-->
+        <script src="/js/certificate.js"></script>
+    </body>
+</html>

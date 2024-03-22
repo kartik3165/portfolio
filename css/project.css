@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style-type:none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color : #081b29;
+    --second-bg-color : #112e42;
+    --text-color : #ededed;
+    --main-color : #00abf0;
+}
+
+html {
+    overflow-x : hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.back-btn {
+   text-align: left;
+   margin: 15px;
+   font-size: 3.4rem;
+   color: white;
+}
+
+.title {
+    padding-top: 30px;
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+}
+
+.head {
+    font-size: 1.7rem;
+    margin:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.head button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 400;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.active {
+    background-color: var(--main-color);
+    border: 5px solid var(--main-color);
+}
+
+.work-holder {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-list {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px,1fr));
+    grid-gap: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;  
+}
+ 
+.work {
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;   
+} 
+
+.project_section{
+    text-align: center;;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #00abf0);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text, .footer-iconTop {
+    position: relative;
+}
+
+.footer-text p {
+    font-size: 1rem;
+}
+
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a i {
+    font-size: 1.8rem;
+    color: var(--bg-color);
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+
+.work-holder {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display three columns */
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+ 
+.work {
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;   
+} 
+
+.project_section{
+    text-align: center;;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #00abf0);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.layer h3 {
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
